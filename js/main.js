@@ -20,11 +20,19 @@ function startGame(e) {
 function computerChoice() {
   var choices = ['rock', 'paper', 'scissors']
   var index = Math.floor(Math.random() * 3)
-  console.log(choices[index])
+  computer = choices[index]
 }
 
 function checkWin() {
-  console.log('checking for win')
+  //nested if statements
+  if (user === 'rock') {
+    if (computer === 'paper')
+    
+  } else if ( user === 'paper' ) {
+
+  } else {
+
+  }
 }
 
 function displayResults() {
@@ -40,10 +48,3 @@ for (var i in choices) {
     //First load
   }
 }
-
-var start = document.getElementById('start')
-start.addEventListener('click', function() {
-  start.className = "hide"
-  var game = document.getElementById('game')
-  game.className = 'container'
-});
